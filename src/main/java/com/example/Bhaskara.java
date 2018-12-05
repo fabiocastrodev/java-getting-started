@@ -34,10 +34,10 @@ public class Bhaskara {
   }
                   
   public double getX1() {
-    return (-getB() + getDelta()) / (getA() * 2);
+    return (-getB() + Math.sqrt(getDelta())) / (getA() * 2);
   }
                   
   public double getX2() {
-    return (-getB() - getDelta()) / (getA() * 2);
+    return (-getB() - Math.sqrt(getDelta())) / (getA() * 2);
   }                
 }
