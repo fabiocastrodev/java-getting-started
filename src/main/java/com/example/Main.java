@@ -55,7 +55,7 @@ public class Main {
   }
   
   @RequestMapping("/bhaskara/{a}/{b}/{c}")
-  String bhaskara(@PathVariable a, @PathVariable b, @PathVariable c, Map<String, Object> model) {
+  String bhaskara(@PathVariable double a, @PathVariable double b, @PathVariable double c, Map<String, Object> model) {
     Bhaskara bhask = new Bhaskara(a, b, c);
     
     model.put("a", bhask.getA());
