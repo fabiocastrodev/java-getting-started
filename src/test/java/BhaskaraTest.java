@@ -21,6 +21,6 @@ public class BhaskaraTest {
   public void Teste3() {
       Bhaskara bhask = new Bhaskara(1.0, 3.0, -4.0);
       assertEquals(1.0, bhask.getX1(), 0.1);
-      assertEquals(-4.0, bhask.getX2()), 0.1;
+      assertEquals(-4.0, bhask.getX2(), 0.1);
   }
 }
