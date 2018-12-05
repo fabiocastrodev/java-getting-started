@@ -53,5 +53,19 @@ public class Main {
      model.put("sequencia", sequencia);
     return "fibo";
   }
+  
+  @RequestMapping("/bhaskara/{a}/{b}/{c}")
+  String bhaskara(@PathVariable a, @PathVariable b, @PathVariable c, Map<String, Object> model) {
+    Bhaskara bhask = new Bhaskara(a, b, c);
+    
+    model.put("a", bhask.getA());
+    model.put("b", bhask.getB());
+    model.put("C", bhask.getC());
+    
+    model.put("delta", bhask.getDelta());
+    model.put("resultX1", bhask.getX1());
+    model.put("resultX2", bhask.getX2());
 
+    return "bhaskara";
+  }
 }

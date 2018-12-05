@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'db')}">
+
+<body>
+
+
+<div class="container">
+  <h1>O resultado para <span th:text="${a}"></span>x² <span th:text="${b}"></span>x <span th:text="${c}"></span> é:</h1>
+</div>
+</body>
+</html>
