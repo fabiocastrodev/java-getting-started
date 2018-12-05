@@ -5,7 +5,7 @@ public class Bhaskara {
   double b;
   double c;
   
-  public Bhaskara(double a, double b {
+  public Bhaskara(double a, double b) {
     this.a = a;
     this.b = b;
     this.c = 0;
