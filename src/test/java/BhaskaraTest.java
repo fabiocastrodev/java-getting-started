@@ -2,7 +2,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import com.example.Bhaskara;
 
-public class BhaskaraTEst {
+public class BhaskaraTest {
   @Test
   public void Teste1() {
       Bhaskara bhask = new Bhaskara(1.0, -5.0, 6.0);
